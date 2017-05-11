@@ -1,0 +1,3 @@
+faye:
+  port: 8000
+  secret: meh

@@ -1,0 +1,4 @@
+faye:
+  host: 0.0.0.0
+  mount: /faye
+  timeout: 45

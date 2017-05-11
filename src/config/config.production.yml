@@ -1,0 +1,3 @@
+faye:
+  port: 5000
+  # faye__secret
