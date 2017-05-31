@@ -15,10 +15,8 @@ const server = http.createServer(function(request, response) {
 
 const serverAuth = {
   incoming: function(message, callback) {
-    if (message.channel !== '/meta/subscribe') return callback(message);
-    const subscription = message.subscription,
-          msgToken     = message.ext && message.ext.secret;
-
+    if (message.channel !== '/messages') return callback(message);
+    const msgToken = message.ext && message.ext.secret;
     const secret = config.get('faye.secret');
     if (secret !== msgToken) message.error = 'Invalid subscription auth token';
     callback(message);
