@@ -10,7 +10,7 @@ const bayeux = new faye.NodeAdapter({
 // Handle non-Bayeux requests
 const server = http.createServer(function(request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'});
-  response.end('Hello stranger');
+  response.end('Ok');
 });
 
 const serverAuth = {

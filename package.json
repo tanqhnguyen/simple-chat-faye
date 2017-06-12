@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "dev": "./node_modules/.bin/nodemon ./start.js"
+    "dev": "./node_modules/.bin/nodemon ./start.js",
+    "start": "./node_modules/.bin/forever ./start.js"
+  },
+  "engines": {
+    "node": "~6.9.4"
   },
   "author": "Tan Nguyen <tan.qh.nguyen@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "faye": "^1.2.4",
+    "forever": "^0.15.3",
     "js-yaml": "^3.8.1",
     "lodash": "^4.17.4",
     "nconf": "^0.8.4"
